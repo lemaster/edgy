@@ -1,6 +1,8 @@
 defmodule Edgy.MixProject do
   use Mix.Project
 
+  @source_url "https://github.com/lemaster/edgy"
+
   def project do
     [
       app: :edgy,
@@ -13,8 +15,11 @@ defmodule Edgy.MixProject do
       package: [
         name: :edgy,
         maintainers: ["Fred LeMaster"],
-        licenses: ["MIT"]
-        source_url: %{"GitHub" => "https://github.com/lemaster/edgy"}
+        licenses: ["MIT"],
+        links: %{
+          "GitHub" => @source_url
+        },
+        source_url: @source_url
       ]
     ]
   end
